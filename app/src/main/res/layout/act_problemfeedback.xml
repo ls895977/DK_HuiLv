@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_65"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/min_problemfeedback_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dip_15"
+            android:paddingTop="@dimen/dip_5"
+            android:paddingRight="@dimen/dip_15"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dip_8"
+            android:src="@mipmap/icon_blck_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dip_8"
+            android:text="意见反馈"
+            android:textColor="@color/my_color"
+            android:textSize="@dimen/fond_21sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dip_10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dip_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*反馈内容"
+                        android:textColor="@color/my_color"
+                        android:textSize="@dimen/fond_16sp" />
+
+                    <TextView
+                        android:id="@+id/shuliang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="0/200"
+                        android:textColor="#A4A4A4"
+                        android:textSize="@dimen/fond_12sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip_0.1"
+                    android:background="#e0e0e0" />
+
+                <EditText
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dip_10"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="请填写反馈内容..."
+                    android:maxLength="200"
+                    android:minLines="5"
+                    android:padding="@dimen/dip_5"
+                    android:textColorHint="#A4A4A4"
+                    android:textSize="@dimen/fond_14sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dip_10">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dip_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*联系方式"
+                        android:textColor="@color/my_color"
+                        android:textSize="@dimen/fond_16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip_0.1"
+                    android:background="#e0e0e0" />
+
+                <EditText
+                    android:id="@+id/etTelephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dip_10"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="请填写您的电话，微信，QQ或邮箱"
+                    android:maxLength="200"
+                    android:padding="@dimen/dip_5"
+                    android:textColorHint="#A4A4A4"
+                    android:textSize="@dimen/fond_14sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/fond_12sp"
+                android:textColor="#FFB1B7BF"
+                android:padding="@dimen/dip_10"
+                android:text="联系方式仅工作人员可见，我们不会泄露您的隐私"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/ProblemFeedback_commit"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/dip_40"
+        android:layout_marginLeft="@dimen/dip_40"
+        android:layout_marginBottom="@dimen/dip_20"
+        android:layout_height="@dimen/dip_40"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="提交"
+        android:background="@drawable/pf_style"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fond_16sp" />
+</RelativeLayout>

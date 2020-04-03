@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_65">
+
+        <ImageView
+            android:id="@+id/bt_Bookkeeping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/dip_10"
+            android:paddingTop="@dimen/dip_15"
+            android:paddingRight="@dimen/fond_15sp"
+            android:paddingBottom="@dimen/dip_8"
+            android:src="@mipmap/yhl_logo_return"
+            android:textColor="@color/my_color"
+            android:textSize="@dimen/fond_15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="@dimen/dip_10"
+            android:paddingTop="@dimen/dip_15"
+            android:paddingRight="@dimen/fond_15sp"
+            android:paddingBottom="@dimen/dip_8"
+            android:text="添加货币"
+            android:textColor="@color/my_color"
+            android:textSize="@dimen/dip_17"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/dip_15"
+            android:paddingTop="@dimen/dip_10"
+            android:paddingRight="@dimen/dip_10"
+            android:paddingBottom="@dimen/dip_15"
+            android:src="@mipmap/yhl_logo_search"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_1"
+        android:background="#f0f0f0" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_0.1"
+        android:background="#f0f0f0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.daikuanhuilv.dk_huilv.ui.view.SideBar
+            android:id="@+id/side_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:textColor="@color/my_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>
